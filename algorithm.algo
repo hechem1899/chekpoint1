@@ -1,0 +1,25 @@
+ALGORITHM algorithm_name
+VAR
+   l:STRING , numw:INTEGER:=0 , numv:INTEGER,j:INTEGER,k:INTEGER;
+BEGIN
+read (str)
+    l:= length(str)
+    FOR i FROM 0 TO l-1 STEP 1  DO
+        str(i) != " "
+        j=j+1
+    END_FOR
+FOR k FROM 0 TO l-1 STEP k++  DO
+    str(k)=" "
+    numw=numw+1
+    
+END_FOR
+FOR m FROM 0 TO l-1 STEP step  DO
+    IF (str(m)="O"or "I" or"A"or"Y"or"U") THEN
+    numv=numv+1
+    END_IF
+END_FOR
+    Write(j)
+    Write(numw+1)
+    Write(numv)
+    
+END
